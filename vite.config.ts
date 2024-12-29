@@ -9,6 +9,12 @@ export default defineConfig({
 		wasm(), 
     topLevelAwait(), 
 	],
+	worker: {
+		plugins: [
+			wasm(),
+			topLevelAwait(), 
+		],
+	},
 	optimizeDeps: { 
     exclude: ['@nimiq/core'], 
   }, 
